@@ -29,6 +29,7 @@ Script/Parameters Setup
 - Set the `target_calendar` variable to the calendar-ID of the new calendar
 - In the script page, select `Resources` then `Advanced Google Services` and enable `Calendar API` and `Tasks API` in the list. 
 - Then go to `console.cloud.google.com` and select `APIs & Services` in the menu bar and then select `Dashboard`. Click on `Enable APIS AND SERVICES`. Search for `Google Calendar API` then click and enable it. Do the same thing for `Tasks API`.
+- Setting up the trigger: go to the script page, select `Edit`, then `Current project's triggers`, then `No triggers set up. Click here to add one now.`. Select `event creator` under `Run` and `from calendar` under `Events`. Click Save.
 - By default the working hours in this script is from `9:00-23:00`. If you want to change this, search for `working_start_time` and `working_end_time` parameters and change them accordingly. 
   
   (Optional) Set the values of these parameters: 
