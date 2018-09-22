@@ -46,6 +46,7 @@ Script/Parameters Setup
 Quick Syntax tutorial
 ----------------------
 
+- You can comment a task by putting a `#` in the beginning of its title. 
 - In the note section of the task, add the parameters (mentioned below) one after another with a comma `,` in between
 - The order of parameters is not important
 - One-time tasks need a deadline
