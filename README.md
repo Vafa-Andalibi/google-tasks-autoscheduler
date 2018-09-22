@@ -24,12 +24,17 @@ Script/Parameters Setup
 - Go to https://script.google.com and create a new script
 - Copy/Paste the code from `autoscheduler.gs` into the new script. 
 - Save (Ctrl+s)
+![screencast](gifs/1_create_script.gif)
 - Add the calendar-ID of your main calendars inside the `preserved_calendars` array. The events of these calendars will be considered as non-changable, e.g. meeting events, class schedule, etc. 
 - Create a new calendar in your google account for the auto-scheduler events
+![screencast](gifs/2_create_calendar.gif)
 - Set the `target_calendar` variable to the calendar-ID of the new calendar
+![screencast](gifs/3_copy_calendarID.gif)
 - In the script page, select `Resources` then `Advanced Google Services` and enable `Calendar API` and `Tasks API` in the list. 
 - Then go to `console.cloud.google.com` and select `APIs & Services` in the menu bar and then select `Dashboard`. Click on `Enable APIS AND SERVICES`. Search for `Google Calendar API` then click and enable it. Do the same thing for `Tasks API`.
+![screencast](gifs/4_enable_API.gif)
 - Setting up the trigger: go to the script page, select `Edit`, then `Current project's triggers`, then `No triggers set up. Click here to add one now.`. Select `event creator` under `Run` and `from calendar` under `Events`. Click Save.
+![screencast](gifs/5_adding_trigger.gif)
 - By default the working hours in this script is from `9:00-23:00`. If you want to change this, search for `working_start_time` and `working_end_time` parameters and change them accordingly. 
   
   (Optional) Set the values of these parameters: 
@@ -46,6 +51,7 @@ Script/Parameters Setup
 Quick Syntax tutorial
 ----------------------
 
+![screencast](gifs/6_sample_tasks.gif)
 - You can comment a task by putting a `#` in the beginning of its title. 
 - In the note section of the task, add the parameters (mentioned below) one after another with a comma `,` in between
 - The order of parameters is not important
